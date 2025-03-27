@@ -111,10 +111,10 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-           &kp GRAVE  &bt BT_CLR  &kp UP    &trans     &kp LBRC    &kp RBRC    &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp EQUAL
-           &trans     &kp LEFT    &kp DOWN  &kp RIGHT  &kp LBKT    &kp RBKT    &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp MINUS
-&kp TILDE  &trans     &kp PG_UP   &kp CAPS  &kp PG_DN  &kp LPAR    &kp RPAR    &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp KP_MULTIPLY  &kp PLUS
-                                  &trans    &trans     &trans      &kp PERIOD  &kp NUMBER_0  &kp KP_COMMA
+           &kp GRAVE  &bt BT_CLR  &kp UP    &trans     &kp LBRC    &kp RBRC    &kp LS(NUMBER_7)  &kp LS(NUMBER_8)  &kp LS(NUMBER_9)  &kp EQUAL
+           &trans     &kp LEFT    &kp DOWN  &kp RIGHT  &kp LBKT    &kp RBKT    &kp LS(NUMBER_4)  &kp LS(NUMBER_5)  &kp LS(NUMBER_6)  &kp MINUS
+&kp TILDE  &trans     &kp PG_UP   &kp CAPS  &kp PG_DN  &kp LPAR    &kp RPAR    &kp LS(NUMBER_1)  &kp LS(NUMBER_2)  &kp LS(NUMBER_3)  &kp KP_MULTIPLY  &kp PLUS
+                                  &trans    &trans     &trans      &kp PERIOD  &kp LS(NUMBER_0)  &kp KP_COMMA
             >;
         };
 
@@ -137,10 +137,10 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-        &kp EXCLAMATION  &kp QUESTION  &kp POUND  &kp DOLLAR  &kp PERCENT    &kp RA(AMPERSAND)  &kp AMPERSAND   &kp LS(N8)  &kp APOSTROPHE  &kp DOUBLE_QUOTES
-        &kp RA(A)        &kp AT_SIGN   &kp RA(S)  &trans      &trans         &kp C_MUTE         &kp LS(RA(N4))  &kp RA(N5)  &kp RA(N4)      &kp RA(O)
-&trans  &kp RA(F18)      &kp RA(F19)   &trans     &trans      &trans         &kp C_VOL_DN       &kp C_VOL_UP    &kp C_PREV  &kp C_NEXT      &kp BSLH           &trans
-                                       &trans     &gif        &mo ADJ        &trans             &kp C_PP        &trans
+        &kp RA(NUMBER_1)  &kp RA(NUMBER_2)  &kp RA(NUMBER_3)  &kp RA(NUMBER_4)  &kp RA(NUMBER_5)    &kp RA(NUMBER_6)  &kp RA(NUMBER_7)  &kp RA(NUMBER_8)  &kp RS(DOUBLE_QUOTES)  &kp RS(SEMICOLON)
+        &kp RA(A)         &kp AT_SIGN       &kp RA(S)         &trans            &trans              &kp C_MUTE        &kp LS(RA(N4))    &kp RA(N5)        &kp RA(N4)             &kp RA(O)
+&trans  &kp RA(F18)       &kp RA(F19)       &trans            &trans            &trans              &kp C_VOL_DN      &kp C_VOL_UP      &kp C_PREV        &kp C_NEXT             &kp BSLH           &trans
+                                            &trans            &gif              &mo ADJ             &trans            &kp C_PP          &trans
             >;
         };
 
