@@ -73,6 +73,21 @@
             bindings = <&kp RA(N)>;
             key-positions = <28 29>;
         };
+
+        cz_caret {
+            bindings = <&kp RA(NUMBER_3)>;
+            key-positions = <5 6>;
+        };
+
+        cz_dollar {
+            bindings = <&kp RA(SEMICOLON)>;
+            key-positions = <15 16>;
+        };
+
+        cz_percent_sign {
+            bindings = <&kp LS(MINUS)>;
+            key-positions = <26 27>;
+        };
     };
 
     macros {
@@ -116,7 +131,7 @@
             bindings = <
                  &kp Q  &kp W  &kp E      &kp R         &kp T                 &kp Y            &kp U      &kp I                 &kp O    &kp P
                  &kp A  &kp S  &kp D      &kp F         &kp G                 &kp H            &kp J      &kp K                 &kp L    &kp SEMICOLON
-&mt LSHIFT CAPS  &kp Z  &kp X  &kp C      &kp V         &kp B                 &kp N            &kp M      &kp COMMA             &kp DOT  &kp FSLH       &kp BACKSLASH
+&mt LSHIFT CAPS  &kp Z  &kp X  &kp C      &kp V         &kp B                 &kp N            &kp M      &kp COMMA             &kp DOT  &kp FSLH       &kp APOSTROPHE
                                &kp LCTRL  &mt LGUI TAB  &mt LEFT_ALT SPACE    &lt 1 BACKSPACE  &lt 2 TAB  &mt RIGHT_ALT DELETE
             >;
         };
@@ -168,7 +183,7 @@
             bindings = <
             &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4          &kp NUMBER_5            &kp NUMBER_6  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp NUMBER_0
             &kp GRAVE     &trans        &trans        &trans                &trans                  &kp C_MUTE    &trans        &trans        &trans        &trans
-&kp LSHIFT  &trans        &trans        &trans        &kp C_BRIGHTNESS_DEC  &kp C_BRIGHTNESS_INC    &kp C_VOL_DN  &kp C_VOL_UP  &kp C_PREV    &kp C_NEXT    &trans        &kp C_PP
+&kp LSHIFT  &trans        &trans        &trans        &kp C_BRIGHTNESS_DEC  &kp C_BRIGHTNESS_INC    &kp C_VOL_DN  &kp C_VOL_UP  &kp C_PREV    &kp C_NEXT    &kp C_PP      &kp BACKSLASH
                                         &kp LCTRL     &kp LGUI              &mo 3                   &kp PSCRN     &trans        &kp RALT
             >;
         };
