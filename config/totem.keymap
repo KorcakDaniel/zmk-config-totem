@@ -103,6 +103,21 @@
             bindings = <&kp LS(SINGLE_QUOTE)>;
             key-positions = <18 9>;
         };
+
+        en_hashtag {
+            bindings = <&kp LS(NUMBER_3)>;
+            key-positions = <13 14>;
+        };
+
+        en_ampersand {
+            bindings = <&kp LS(NUMBER_7)>;
+            key-positions = <3 4>;
+        };
+
+        en_at {
+            bindings = <&kp LS(NUMBER_2)>;
+            key-positions = <24 25>;
+        };
     };
 
     macros {
@@ -170,9 +185,9 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-                     &kp GRAVE  &kp HOME   &kp UP    &kp END    &trans    &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9         &kp MINUS     &kp EQUAL
-                     &trans     &kp LEFT   &kp DOWN  &kp RIGHT  &trans    &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6         &kp HASH      &kp BACKSLASH
-&mt LEFT_SHIFT CAPS  &trans     &kp PG_UP  &trans    &kp PG_DN  &trans    &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3         &kp KP_EQUAL  &kp KP_MULTIPLY  &kp KP_PLUS
+                     &kp GRAVE  &kp HOME   &kp UP    &kp END    &trans    &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9         &kp MINUS      &kp EQUAL
+                     &trans     &kp LEFT   &kp DOWN  &kp RIGHT  &trans    &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6         &kp BACKSLASH  &kp BACKSLASH
+&mt LEFT_SHIFT CAPS  &trans     &kp PG_UP  &trans    &kp PG_DN  &trans    &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3         &kp KP_EQUAL   &kp KP_MULTIPLY  &kp KP_PLUS
                                            &trans    &trans     &trans    &kp PERIOD       &kp KP_NUMBER_0  &mt RIGHT_ALT KP_COMMA
             >;
         };
