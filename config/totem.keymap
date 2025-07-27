@@ -44,49 +44,64 @@
             key-positions = <11 12 13>;
         };
 
-        cz_parenthesis_right {
-            bindings = <&kp RIGHT_BRACKET>;
-            key-positions = <7 8>;
-        };
-
-        cz_parenthesis_left {
-            bindings = <&kp LS(RIGHT_BRACKET)>;
+        en_parentheses_left {
+            bindings = <&kp LS(NUMBER_9)>;
             key-positions = <7 6>;
         };
 
-        cz_bracket_left {
-            bindings = <&kp RA(F)>;
+        en_parentheses_right {
+            bindings = <&kp LS(NUMBER_0)>;
+            key-positions = <7 8>;
+        };
+
+        en_bracket_left {
+            bindings = <&kp LEFT_BRACKET>;
             key-positions = <16 17>;
         };
 
-        cz_bracket_right {
-            bindings = <&kp RA(G)>;
+        en_bracket_right {
+            bindings = <&kp RIGHT_BRACKET>;
             key-positions = <17 18>;
         };
 
-        cz_curly_left {
-            bindings = <&kp RA(B)>;
+        en_curly_left {
+            bindings = <&kp LS(LEFT_BRACKET)>;
             key-positions = <27 28>;
         };
 
-        cz_curly_right {
-            bindings = <&kp RA(N)>;
+        en_curly_right {
+            bindings = <&kp LS(RIGHT_BRACKET)>;
             key-positions = <28 29>;
         };
 
-        cz_caret {
-            bindings = <&kp RA(NUMBER_3)>;
+        en_caret {
+            bindings = <&kp LS(NUMBER_6)>;
             key-positions = <5 6>;
         };
 
-        cz_dollar {
-            bindings = <&kp RA(SEMICOLON)>;
+        en_dollar {
+            bindings = <&kp LS(NUMBER_4)>;
             key-positions = <15 16>;
         };
 
-        cz_percent_sign {
-            bindings = <&kp LS(MINUS)>;
+        en_percent_sign {
+            bindings = <&kp LS(NUMBER_5)>;
             key-positions = <26 27>;
+        };
+
+        en_exclamation_mark {
+            bindings = <&kp LS(NUMBER_1)>;
+            key-positions = <30 31>;
+        };
+
+        en_underscore {
+            bindings = <&kp LS(MINUS)>;
+            key-positions = <29 19>;
+        };
+
+        en_double_quotes {
+            bindings = <&kp LS(SINGLE_QUOTE)>;
+            key-positions = <18 9>;
         };
     };
 
@@ -131,7 +146,7 @@
             bindings = <
             &kp Q  &kp W  &kp E      &kp R         &kp T                 &kp Y            &kp U      &kp I                 &kp O    &kp P
             &kp A  &kp S  &kp D      &kp F         &kp G                 &kp H            &kp J      &kp K                 &kp L    &kp SEMICOLON
-&kp LSHIFT  &kp Z  &kp X  &kp C      &kp V         &kp B                 &kp N            &kp M      &kp COMMA             &kp DOT  &kp FSLH       &kp BACKSLASH
+&kp LSHIFT  &kp Z  &kp X  &kp C      &kp V         &kp B                 &kp N            &kp M      &kp COMMA             &kp DOT  &kp FSLH       &kp SINGLE_QUOTE
                           &kp LCTRL  &mt LGUI TAB  &mt LEFT_ALT SPACE    &lt 1 BACKSPACE  &lt 2 TAB  &mt RIGHT_ALT DELETE
             >;
         };
@@ -155,10 +170,10 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-                     &trans  &kp HOME   &kp UP    &kp END    &trans    &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9         &kp NUMBER_9      &kp N0
-                     &trans  &kp LEFT   &kp DOWN  &kp RIGHT  &trans    &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6         &kp LEFT_BRACKET  &kp RIGHT_BRACKET
-&mt LEFT_SHIFT CAPS  &trans  &kp PG_UP  &trans    &kp PG_DN  &trans    &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3         &kp KP_EQUAL      &kp KP_MULTIPLY    &kp KP_PLUS
-                                        &trans    &trans     &trans    &kp PERIOD       &kp KP_NUMBER_0  &mt RIGHT_ALT KP_COMMA
+                     &kp GRAVE  &kp HOME   &kp UP    &kp END    &trans    &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9         &kp MINUS     &kp EQUAL
+                     &trans     &kp LEFT   &kp DOWN  &kp RIGHT  &trans    &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6         &kp HASH      &kp BACKSLASH
+&mt LEFT_SHIFT CAPS  &trans     &kp PG_UP  &trans    &kp PG_DN  &trans    &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3         &kp KP_EQUAL  &kp KP_MULTIPLY  &kp KP_PLUS
+                                           &trans    &trans     &trans    &kp PERIOD       &kp KP_NUMBER_0  &mt RIGHT_ALT KP_COMMA
             >;
         };
 
